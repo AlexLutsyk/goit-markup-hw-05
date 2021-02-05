@@ -25,7 +25,7 @@
             <nav class="navigation">
                 <ul class="nav-list">
                     <li class="nav-items">
-                        <a class="nav-link" href="./index.html">Студия</a>
+                        <a class="nav-link current-page" href="./index.html">Студия</a>
                     </li>
                     <li class="nav-items">
                         <a class="nav-link" href="./portfolio.html">Портфолио</a>
@@ -64,7 +64,7 @@
         <section class="hero">
             <div class="container-hero">
                 <h1 class="hero-titel">Эффективные решения для вашего бизнеса</h1>
-            <button type="button" class="hero-button">Заказать услугу</button>
+            <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
         <!--OUR PLUSES-->
@@ -117,25 +117,22 @@
             <div class="container"> 
                 <ul class="what-we-do-list">
                     <li class="what-we-do-items">
-                
-                
-                        <img class="img" src="./images/what_we_do/typing.jpg" alt="работает програмист" width="370" height="294">
-                
-                
+                        <div class="what-we-do-wrapper">
+                            <img class="img" src="./images/what_we_do/typing.jpg" alt="работает програмист" width="370" height="294">
+                            <p class="what-we-do-text" lang="ru">Десктопные приложения</p>
+                        </div>
                     </li>
                     <li class="what-we-do-items">
-                
-                
-                        <img class="img" src="./images/what_we_do/models.jpg" alt="варианты выбора" width="370" height="294">
-                
-                
+                        <div class="what-we-do-wrapper">
+                            <img class="img" src="./images/what_we_do/models.jpg" alt="варианты выбора" width="370" height="294">
+                            <p class="what-we-do-text" lang="ru">Мобильные приложения</p>
+                        </div>
                     </li>
                     <li class="what-we-do-items">
-                
-                
-                        <img class="img" src="./images/what_we_do/tablet.jpg" alt="работа с цветом" width="370" height="294">
-                
-                
+                        <div class="what-we-do-wrapper">
+                            <img class="img" src="./images/what_we_do/tablet.jpg" alt="работа с цветом" width="370" height="294">
+                            <p class="what-we-do-text" lang="ru">Дизайнерские решения</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -394,6 +391,17 @@
             </div>
         </div>
     </footer>
+    <!-- MODAL WINDOW -->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="close-modal-btn" data-modal-close>
+                <svg class="icon-vector" height="11" width="11">
+                    <use href="./images/sprites/sprite.svg#icon-vector"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./JS/modal.js"></script>
 </body>
 
 </html>
